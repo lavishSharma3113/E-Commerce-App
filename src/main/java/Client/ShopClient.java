@@ -32,7 +32,6 @@ public class ShopClient {
             while ((serverMsg = in.readLine()) != null) {
                 System.out.println(serverMsg);
 
-                // If the server is expecting input (usually ends with : )
                 if (serverMsg.endsWith(": ") || serverMsg.equals("Password: ")) {
                     String userResponse = userInput.readLine();
                     out.println(userResponse);
